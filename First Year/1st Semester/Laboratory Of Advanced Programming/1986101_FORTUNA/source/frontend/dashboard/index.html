@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MARS OS</title>
+
+  <link rel="icon" type="image/png" href="../shared/marsfavicon.png" />
+  <link rel="stylesheet" href="../shared/common.css" />
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div id="shared-navbar"></div>  
+  <div class="page-container">
+
+    <main class="dashboard-layout">
+      <section class="panel">
+        <h2>
+          LIVE SENSORS 
+          <span class="update-info">updated every 5 seconds</span>
+        </h2>
+        <div id="sensor-list" class="card-list"></div>
+      </section>
+
+      <section class="panel">
+        <h2>ACTUATORS</h2>
+        <div id="actuator-list" class="card-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../shared/navbar.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

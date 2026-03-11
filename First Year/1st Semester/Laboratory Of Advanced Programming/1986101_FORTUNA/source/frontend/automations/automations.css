@@ -1,0 +1,186 @@
+.automations-page {
+  margin-top: 24px;
+}
+
+/*---------- CARD ----------*/
+.rules-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.automations-panel {
+  background: #f1f2f4;
+  border-radius: 8px;
+  padding: 22px;
+  min-height: 680px;
+}
+
+.automations-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.automations-header h2 {
+  font-size: 20px;
+  color: #1f2937;
+}
+
+.rules-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.rules-table thead {
+  background: #f5f6f8;
+}
+
+.rules-table th,
+.rules-table td {
+  text-align: left;
+  padding: 16px 18px;
+  font-size: 15px;
+  color: #1f2937;
+}
+
+.rules-table th {
+  font-weight: 700;
+}
+
+.rules-table tbody tr {
+  border-top: 1px solid #dde1e7;
+}
+
+/*---------- BUTTONS ----------*/
+.add-rule-btn {
+  background: #3765df;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 22px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-rule-btn:hover {
+  filter: brightness(0.95);
+}
+
+.manage-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.manage-btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #cfd5dd;
+  background: #e5e7eb;
+  color: #1f2937;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.manage-btn:hover {
+  background: #d9dde3;
+}
+
+.edit-btn {
+  background: #e5e7eb;
+  border-color: #cfd5dd;
+}
+
+.delete-btn {
+  background: #fdeaea;
+  border-color: #f0a1a1;
+  color: #c62828;
+}
+
+.delete-btn:hover {
+  background: #f8d7d7;
+}
+
+/*---------- ADD RULE ----------*/
+.rule-popup {
+  width: 420px;
+  border-radius: 12px;
+  padding: 26px 24px 20px 24px;
+}
+
+.rule-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.rule-form label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-top: 4px;
+}
+
+.swal-custom-select,
+.swal-custom-input {
+  width: 100% !important;
+  margin: 0 !important;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  padding: 0 14px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.swal-radio-group {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.swal-radio-group label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.swal-save-btn {
+  background: #3765df;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 22px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.swal-cancel-btn {
+  background: #e5e7eb;
+  color: #1f2937;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.swal-save-btn:hover,
+.swal-cancel-btn:hover {
+  filter: brightness(0.97);
+}
+
+.swal2-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

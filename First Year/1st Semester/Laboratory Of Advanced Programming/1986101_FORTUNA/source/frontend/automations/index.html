@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MARS OS</title>
+
+  <link rel="icon" type="image/png" href="../shared/marsfavicon.png" />
+  <link rel="stylesheet" href="../shared/common.css" />
+  <link rel="stylesheet" href="automations.css" />
+</head>
+<body>
+  <div id="shared-navbar"></div>
+
+  <div class="page-container">
+    <main class="automations-page">
+
+        <div class="rules-card">
+
+            <div class="automations-header">
+            <h2>ACTIVE RULES</h2>
+            <button class="add-rule-btn" id="add-rule-btn">+ ADD NEW RULE</button>
+            </div>
+
+            <table class="rules-table">
+            <thead>
+                <tr>
+                <th>ID</th>
+                <th>Condition</th>
+                <th>Action</th>
+                <th>Manage</th>
+                </tr>
+            </thead>
+
+            <tbody id="rules-table-body"></tbody>
+            </table>
+
+        </div>
+
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../shared/navbar.js"></script>
+  <script src="automations.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+services:
+  mars-simulator:
+    image: mars-iot-simulator:multiarch_v1
+    ports:
+      - "8080:8080"
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: mars_rules
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+
+  ingestion-service:
+    build: ./ingestion-service
+    depends_on:
+      - mars-simulator
+      - rabbitmq
+
+  state-service:
+    build: ./state-service
+    ports:
+      - "8001:8001"
+    depends_on:
+      - rabbitmq
+
+  rule-engine:
+    build: ./rule-engine
+    depends_on:
+      - rabbitmq
+      - postgres
+      - mars-simulator
+    
+  backend-api:
+    build: ./backend-api
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+      - state-service
